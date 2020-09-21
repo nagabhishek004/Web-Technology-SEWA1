@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       function OuterFunction(){
+           var x=100;
+           document.write("Outer Function"+"</br>");
+           document.write(x+"</br>");
+           function InnerFunction(){
+               var y=200;
+               document.write("Inner Function"+"</br>");
+               document.write(x+" "+y+"</br>");
+           }
+           InnerFunction();
+       }
+       OuterFunction();
+   </script> 
+</body>
+</html>

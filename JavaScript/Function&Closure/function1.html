@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // To Many function arguments
+        function add(a,b){
+            document.write("A :"+a+" "+"B :"+b+"</br>");
+            document.write("C :"+arguments[2]+" "+"D :"+arguments[3]+"</br>");
+        }
+       // add(10,20,30,40);
+        //param=2
+        //args=4---->arguments Object
+
+        //Default Parameter
+        function display(name,age=23,place="Bangalore"){
+            document.write(name+" "+age+" "+place+"</br>");
+        }
+        //display("Harish",24);
+
+        // Rest Parameter
+        function disp(a,...args){
+            document.write(args+"</br>");
+            //args[0]=10;
+            document.write(args[0]+" "+a+"</br>");
+        }
+        disp(10,20,30,40);
+
+        //Return Statement
+        function addition(a,b){
+            return (a/b);
+        }
+        var res=addition(10,"Bhavaniprasad");
+        document.write(res+"</br>");
+        // function Expression
+        var x=function display2(name,place){
+            document.write(name+" "+place+"</br>");
+
+        }
+       x("shruti","Bihar");//Possible
+       
+       // Anonymous Function
+       let z=function(){
+           document.write("this is Anonymous Function "+" </br>");
+       };
+       z();
+      
+
+    </script>
+</body>
+</html>

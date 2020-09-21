@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function without parameters
+        display();
+        function display(){
+            document.write("this is functions"+"</br>");
+        }
+        
+        function display1(){
+            document.write("this is function 1"+"</br>");
+        }
+        display1();
+        //function with parameters
+        function details(name,age,place){
+          
+            document.write(name+" "+age+" "+place+"</br>");
+            document.write(arguments[5]+"</br>")
+        }
+        details(10,20,30,40,50);
+
+        //arguments-w.r.t functions
+        function add(num1,num2){
+            //arguments[0]=10;
+            //arguments[1]=20;
+            //arguments[2]=30;
+            document.write(num1+" "+num2+"</br>");
+            document.write(arguments[0]+" "+arguments[2]+"</br>");
+
+        }
+        add(10,20,30);
+
+        function disp(a,b){
+           // arguments[0]=900;
+           // document.write(a+"</br>");
+           // document.write(b+"</br>");
+           document.write(arguments.length+"</br>");
+           for(i=0;i<arguments.length;i++){
+               document.write("arguments"+[i]+"="+arguments[i]+"</br>");
+           }
+
+        }
+        disp(100,200,300,400,500);
+
+    </script>
+</body>
+</html>

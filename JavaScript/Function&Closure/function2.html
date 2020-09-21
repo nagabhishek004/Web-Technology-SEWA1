@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Anonymous function with parameters
+        var func=function(name,place){
+            document.write(name+" "+place+" "+"</br>");
+        }
+        func("Sunny","patna");
+
+        //Passing Anonymous function as argument
+        function display(myFunc){
+            return myFunc();
+        }
+        document.write(display(function(){ return "Anonymous function"+"</br>";}));
+
+        //Arrow Fuction / Fat Arrow Function
+        var arrow=()=>{
+            document.write("this is Arrow Function"+"</br>");
+        };
+        arrow();
+
+        //Arrow Function with parameters
+        var arrow1=a=>document.write(a+"</br>");
+        
+        arrow1("Arrow Funtion with parameters5");
+
+        //Immediate Invoked Function Expression [IIFE]
+        (function(){document.write("This is IIFE"+"</br>");})();
+
+         //IIFE with Parameters
+        (function(name,place){
+            document.write(name+" "+place+"</br>");
+        })("vijay","Bangalore");
+
+
+    </script>
+</body>
+</html>

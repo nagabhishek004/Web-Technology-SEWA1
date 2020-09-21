@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Mobile=function(model_no,sprice){
+            this.model=model_no;
+            this.price=10000;
+            this.sp=sprice;
+            this.sellingPrice=function(){
+                return(this.price+this.sp);
+            }
+            this.data=function(){
+                document.write("Model :"+" "+this.model+"</br>");
+                document.write("Selling price :"+" "+this.sp+"</br>");
+                document.write("Price :"+" "+this.sellingPrice()+"</br>");
+
+
+            }
+        }
+        var Samsung=new Mobile("Galaxy",12000);
+       Samsung.data();
+        document.write("---------------------------------"+"</br>");
+        var Realme=new Mobile("7 pro",13000);
+       Realme.data();
+    </script>
+</body>
+</html>

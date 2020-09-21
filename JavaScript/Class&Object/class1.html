@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //private properties and methods
+         var Mobile=function(model_no,sprice,color){
+            this.model=model_no;
+            this.color=color;//public
+            var price=10000;// private
+            this.sp=sprice;
+            this.sellingPrice=function(){
+                return(this.price+this.sp);
+            }
+            this.data=function(){
+                document.write("Model :"+" "+this.model+"</br>");
+                document.write("Selling price :"+" "+this.sp+"</br>");
+                document.write("Price :"+" "+this.sellingPrice()+"</br>");
+              }
+             var display=function(){
+                return "this is priavte method";
+            }
+            document.write(display()+"</br>");
+        }
+        var Realme=new Mobile("7 pro",13000,"Mirror Silver");
+        Realme.data();
+        document.write(Realme.sellingPrice());
+    </script>
+</body>
+</html>

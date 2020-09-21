@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var Obj_name={ };
+        var person={};
+        person["name"]="Vijay";
+        person["age"]=23;
+        person["place"]="Bangalore";
+        person["study"]=function(){
+            document.write("this is study method"+"</br>");
+        }
+        person["data"]=function(){
+            document.write("name :"+person["name"]+"</br>");
+            document.write("age :"+person["age"]+"</br>");
+            document.write("Place :"+person["place"]+"</br>");
+        }
+        person["study"]();
+        person["data"]();
+        
+     
+
+
+    </script>
+</body>
+</html>

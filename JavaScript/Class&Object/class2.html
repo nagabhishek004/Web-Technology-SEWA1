@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //accessing private methods and properties outside scope
+         var Mobile=function(model_no,sprice,color){
+            this.model=model_no;
+            this.color=color;//public
+            var price=10000;// private
+            this.sp=sprice;
+            this.sellingPrice=function(){
+                return(this.price+this.sp);
+            }
+            var data=function(){
+                document.write("Model :"+" "+this.model+"</br>");
+                document.write("Selling price :"+" "+this.sp+"</br>");
+                document.write("Price :"+" "+this.sellingPrice()+"</br>");
+              }
+              var show=function(){ // private
+                document.write("This is private Method"+"</br>");
+               }
+              this.display=function(){
+                  show();
+                return price;
+            }
+           }
+        var Realme=new Mobile("7 pro",13000,"silver");
+        document.write(Realme.display()+"</br>");
+    </script>
+</body>
+</html>

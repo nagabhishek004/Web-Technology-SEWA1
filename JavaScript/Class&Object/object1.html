@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Bike={};
+        Bike.brand="yamaha";
+        Bike.name="R15";
+        Bike.color="Blue";
+        Bike.price=190000;
+        Bike.ride=function(){
+            document.write("R15 is a sportz Bike"+"</br>");
+        }
+        Bike.other=function stunt()
+         {
+            document.write("Stunt performed by me"+"</br>");
+        }
+        Bike.data=function(){
+            document.write("Name :"+Bike.name+"</br>");
+            document.write("Brand :"+Bike.brand+"</br>");
+            document.write("color :"+Bike.color+"</br>");
+            document.write("Price"+Bike.price+"</br>");
+        }
+        Bike.data();
+        Bike.other();
+        Bike.ride();
+    </script>
+</body>
+</html>
