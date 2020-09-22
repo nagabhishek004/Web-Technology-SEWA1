@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Bike{
+            constructor(brand,name,color,price){
+                this.brand=brand;
+                this.name=name;
+                this.color=color;
+                this.price=price;
+            }
+            data(){
+                document.write("Brand :"+this.brand+"</br>");
+                document.write("Name :"+this.name+"</br>");
+                document.write("color :"+this.color+"</br>");
+                document.write("Price :"+this.price+"</br>");
+            }
+        }
+        var b1=new Bike("Yamaha","rx 100","megenta",40000);
+        var b2=new Bike("ktm","Duke 390","white",300000);
+        var b3=new Bike("Jawa","perak","cyan",194000);
+        b1.data();
+        document.write("<hr>");
+        b2.data();
+        document.write("<hr>");
+        b3.data();
+        document.write("<hr>");
+    </script>
+</body>
+</html>

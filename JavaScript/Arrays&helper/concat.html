@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //-------------------------Scenario 1----------------------------//
+        var bike=["ktm","yamaha","honda","suzuki","tvs"];
+        var car=["verna","omni","nexa","xuv"];
+        var vehicle=bike.concat(car);
+        for(i=0;i<vehicle.length;i++){
+            document.write(vehicle[i]+"</br>");
+
+        }
+        document.write("<hr>");
+        document.write("<hr>");
+        //-------------------------Scenario 2----------------------------//
+        var bike=["ktm","yamaha","honda","suzuki","tvs"];
+        var car=["verna","omni","nexa","xuv"];
+        var truck=["bharath benz","tata","volvo"];
+        var vehicle=bike.concat(car,truck);
+        for(i=0;i<vehicle.length;i++){
+            document.write(vehicle[i]+"</br>");
+
+        }
+        document.write("<hr>");
+        document.write("<hr>");
+         //-------------------------Scenario 3----------------------------//
+         var bike=["ktm","yamaha","honda","suzuki","tvs"];
+         var vehicle=bike.concat("bwm","range rover","indica","zagwar");
+         for(i=0;i<vehicle.length;i++){
+            document.write(vehicle[i]+"</br>");
+
+        }
+        document.write("<hr>");
+        document.write("<hr>");
+    </script>
+</body>
+</html>

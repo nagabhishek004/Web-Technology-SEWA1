@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(){
+                this.name="Ram";
+                this.place="Ranchi";
+                this.age=20;
+            }
+            Study(){
+                document.write("Ram will study for 1.5 hrs"+"</br>");
+            }
+            data(){
+                document.write(this.name+" "+this.age+" "+this.place+" </br>");
+
+            }
+        }
+        var s1=new Student();
+        s1.Study();
+        s1.data();
+    </script>
+</body>
+</html>
