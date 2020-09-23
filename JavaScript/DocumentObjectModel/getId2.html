@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Java Script</h1>
+    <button onclick="changeColor('Red')">Red</button>
+    <button onclick="changeColor('gold')">Gold</button>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('black')"> Black</button>
+    <script>
+        function changeColor(color){
+            var ele=document.getElementById("head");
+            ele.style.color=color;
+
+        }
+        var ele=document.getElementById("head");
+        console.log(ele);
+    </script>
+</body>
+</html>
