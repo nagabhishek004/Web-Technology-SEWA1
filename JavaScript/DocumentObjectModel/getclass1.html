@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head" onmouseover="changeColor1()" on>Web Technology</h1>
+    <h1 class="head">Java Script</h1>
+    <h1 class="head">Dynamic</h1>
+    <button onclick="changeColor1()" ondblclick="changeColor3()" on>Click Me!</button>
+    <button onclick="changeColor2()">Same</button>
+    <button onclick="changeColor3()" >Back To Normal</button>
+    <script>
+       function changeColor1(){
+        var z=document.getElementsByClassName("head");
+        z[0].style.color="red";
+        z[1].style.color='gold';
+        z[2].style.color='hotpink';
+       }
+       function changeColor2(){
+        var z=document.getElementsByClassName("head");
+      for(i=0;i<z.length;i++){
+          z[i].style.color="blue";
+      }
+       }
+       function changeColor3(){
+        var z=document.getElementsByClassName("head");
+      for(i=0;i<z.length;i++){
+          z[i].style.color="black";
+      }
+       }
+ 
+       
+    </script>
+</body>
+</html>

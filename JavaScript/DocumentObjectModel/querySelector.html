@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <h1 id="head1">Web Technology</h1>
+    <p>This is a paragraph</p>
+    <div>
+        <a href="" class="ele">Click Me!</a>
+        <h2 id="head">This is Heading 2</h2>
+    </div>
+    <div>
+        <h1 class="ele">Div Heading</h1>
+        <p>This is  paragraph inside div</p>
+       
+    </div>
+    
+    <script>
+        //Query Selector w.r.t id
+        var res=document.querySelectorAll("#head,#head1");
+       console.log(res);
+         //Query Selector w.r.t class
+         var res1=document.querySelector(".ele");
+       console.log(res1);
+       //Query Selector w.r.t TagName
+       var res2=document.querySelector("p");
+       console.log(res2);
+       var res3=document.querySelectorAll(".ele,p,#head");
+       console.log(res3);
+    
+    
+    </script>
+</body>
+</html>
