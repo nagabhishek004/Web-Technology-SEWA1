@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv">
+        <h1 id="head">this is a heading inside div</h1>
+        <p>this is para inside div</p>
+    </div>
+    <section id="mysec">
+        <h1>this is heading inside section</h1>
+        <p id="para">this is para inside section</p>
+    </section>
+    <script>
+        var div=document.getElementById("mydiv");
+        var section=document.getElementById("mysec");
+        var h1=document.getElementById("head");
+        var p=document.getElementById("para");
+
+        //appending existing node
+        section.appendChild(h1);
+
+        //appending new nodes
+        var ele=document.createElement("h2");
+      var txt=document.createTextNode("this is heading 2");
+       //ele.textContent="this is heading 2";
+       ele.appendChild(txt);
+       div.appendChild(ele);
+    </script>
+</body>
+</html>

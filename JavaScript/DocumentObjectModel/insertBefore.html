@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv">
+        <h1 id="head">this is a heading inside div</h1>
+        <p>this is para inside div</p>
+    </div>
+    <section id="mysec">
+        <h1 id="headS">this is heading inside section</h1>
+        <p id="para">this is para inside section</p>
+    </section>
+    <script>
+        var div=document.getElementById("mydiv");
+        var section=document.getElementById("mysec");
+        var h1=document.getElementById("head");
+        var p=document.getElementById("para");
+        var h1S=document.getElementById("headS");
+        
+        //insertBefore() ---> for existing elements
+        div.insertBefore(p,h1);
+         //insertBefore() ---> for new elements
+         var ele=document.createElement("h3");
+         ele.textContent="this is heading 3";
+         section.insertBefore(ele,h1S);
+
+
+
+       
+    </script>
+</body>
+</html>

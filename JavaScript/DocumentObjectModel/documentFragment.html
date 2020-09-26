@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv">
+        <h1>This is heading</h1>
+    </div>
+    <script>
+        var df=document.createDocumentFragment();
+        //console.log(df);
+        var h1=document.createElement("h1");
+        var p=document.createElement("p");
+        h1.textContent="This is Heading 2";
+        p.textContent="this is paragraph";
+        df.appendChild(h1);
+        df.appendChild(p);
+        console.log(df);
+        var div=document.getElementById("mydiv");
+        div.appendChild(df);
+    </script>
+</body>
+</html>
