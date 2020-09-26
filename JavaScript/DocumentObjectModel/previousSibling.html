@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is paragraph 1 before Heading</p>
+    <p>This is paragraph 2 before Heading</p>
+    <h1 id=head> <!------This is Comment------> This is Heading<span>This is span</span>
+        <p>This is a Paragraph</p>
+        </h1>
+        <p>This is paragraph 1 after Heading</p>
+        <p>This is paragraph 2 after Heading</p>
+        <script>
+            var x=document.getElementById("head");
+            console.log(x.previousSibling);
+            console.log(x.previousElementSibling);
+        </script>
+</body>
+</html>
