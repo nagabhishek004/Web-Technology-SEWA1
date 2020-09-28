@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="myul">
+        <li>Html</li>
+        <li>Css</li>
+        <li>Java Script</li>
+        <li>Angular</li>
+        <li>React</li>
+      
+    </ul>
+    <div id="mydiv">
+
+    </div>
+    <script>
+        var ul=document.getElementById("myul");
+        var div=document.getElementById("mydiv");
+        var clone=ul.cloneNode(true);
+        div.appendChild(clone);
+        console.log(clone);
+        console.log(document.body);
+
+    </script>
+</body>
+</html>
