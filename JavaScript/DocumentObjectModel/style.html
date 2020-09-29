@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head" style="background-color: yellow;color: red;"> This is a Heading</h1>
+    <script>
+        var h1=document.getElementById("head");
+        var css=h1.style;
+        console.log(css);
+        css.color='blue';
+        css.background='black';
+        css.fontSize='50px';
+        console.log(h1.style);
+    </script>
+</body>
+</html>

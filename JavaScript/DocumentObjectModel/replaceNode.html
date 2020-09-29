@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="myul">
+        <li>Html</li>
+        <li id="del">Css</li>
+        <li>Java Script</li>
+        <li id="ref">Angular</li>
+        <li>React</li>
+      
+    </ul>
+    <script>
+        var ul=document.getElementById("myul");
+        var ref=document.getElementById("ref");
+        var newnode=document.createElement("li");
+        newnode.textContent="this is a new li";
+        ul.replaceChild(newnode,ref);
+    </script>
+</body>
+</html>

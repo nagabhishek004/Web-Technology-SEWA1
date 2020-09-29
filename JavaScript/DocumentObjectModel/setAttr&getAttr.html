@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myid" title="Heading" style="background-color: yellow;font-size: 50px;">This is a heading</h1>
+<script>
+    var h1=document.getElementById("myid");
+    var setAttr1=h1.setAttribute('class','myclass');
+    var setAttr2=h1.setAttribute('style','color:red');
+    console.log(h1.attributes);
+    var getAttr=h1.getAttribute("id")
+    console.log(getAttr);
+    h1.removeAttribute("title");
+    console.log(h1.attributes);
+</script>
+</body>
+</html>
