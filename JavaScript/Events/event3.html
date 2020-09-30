@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--------------OverWriting Event Handler in JavaScript------------>
+    <h1>This is  heading</h1>
+    <button id="mybtn">Click Me!</button>
+    <script>
+        var btn=document.getElementById("mybtn");
+        btn.onclick=disp;
+        btn.onclick=disp1;
+        btn.onclick=disp2;
+        function disp(){
+            window.alert("Even-Binding with Java-Script");
+        }
+        function disp1(){
+            window.alert("-OverWriting Event Handler in JavaScript 1");
+        }
+        function disp2(){
+            window.alert("-OverWriting Event Handler in JavaScript 2");
+        }
+        </script>
+</body>
+</html>

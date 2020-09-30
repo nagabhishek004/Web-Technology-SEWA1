@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            font-size: 35px;
+            padding-left: 55px;
+            border: 3px solid black;
+
+        }
+        #two{
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            font-size: 35px;
+            padding-left: 55px;
+            border: 3px solid black;
+        }
+        #three{
+            width: 200px;
+            height: 200px;
+            background-color: cyan;
+            font-size: 35px;
+            padding-left: 55px;
+            border: 3px solid black;
+        }
+        #four{
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            font-size: 35px;
+            padding-left: 55px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!----------------Event Flow or Event Propagation------------------------>
+    <div id="one">1
+        <div id="two">2
+            <div id="three">3
+                <div id="four">4</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var one=document.getElementById("one");
+        var two=document.getElementById("two");
+        var three=document.getElementById("three");
+        var four=document.getElementById("four");
+
+        //Bubbling phase [Bottom to top]
+        one.addEventListener("click",function(e){console.log(1)},false);
+        two.addEventListener("click",function(e){console.log(2)},false);
+        three.addEventListener("click",function(e){console.log(3);},false);
+        four.addEventListener("click",function(e){console.log(4);e.stopPropagation();},false);
+
+        //Capture phase [ top to Bottom]
+       /* one.addEventListener("click",function(){console.log(1)},true);
+        two.addEventListener("click",function(){console.log(2)},true);
+        three.addEventListener("click",function(){console.log(3)},true);
+        four.addEventListener("click",function(){console.log(4)},true);*/
+    </script>
+</body>
+</html>
