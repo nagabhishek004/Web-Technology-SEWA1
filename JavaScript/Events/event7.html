@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-----------Event Object---------------->
+    <h1 id="head"> This is a heading</h1>
+    <script>
+        var h1=document.getElementById("head");
+        function obj(e){
+            console.log(e)
+        }
+        h1.addEventListener("click",obj);
+    </script>
+</body>
+</html>

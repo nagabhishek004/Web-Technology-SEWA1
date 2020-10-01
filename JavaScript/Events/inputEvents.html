@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name : <input type="text" id="txt">
+    <script>
+        var txt=document.getElementById("txt");
+        function foc(e){
+            txt.style.backgroundColor="cyan";
+        }
+        function blu(e){
+            txt.style.backgroundColor="white";
+        }
+        txt.addEventListener("focus",foc);
+        txt.addEventListener("blur",blu);
+    </script>
+</body>
+</html>

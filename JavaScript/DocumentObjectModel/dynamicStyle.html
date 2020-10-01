@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass{
+            background-color: black;
+            color: white;
+        }
+        .myclass1{
+            background-color: yellow;
+            color: black;
+        }
+        .myclass2{
+            background-color: blue;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head" class="myclass">This is a heding</h1>
+    <script>
+        var h1=document.getElementById("head");
+        h1.className="myclass2";
+    </script>
+</body>
+</html>
