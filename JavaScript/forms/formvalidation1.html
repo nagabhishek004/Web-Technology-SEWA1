@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form" id="form" method="post">
+        Name : <input type="text" name="username" id="user"> <br><br>
+        Password: <input type="password" name="pass" ><br><br>
+        <input type="submit" value="Submit 2" onclick="validate()">
+    </form> 
+    <script>
+        function validate(){
+            var text;
+            var name=document.form.username.value;
+            var password=document.form.pass.value;
+            if(name==null||name==""){
+                text="Name Can't be Empty";
+                alert("Name Can't be Empty");
+            }
+            else{
+                text="invalid";
+                alert("valid input");
+            }
+            if(password.length<6){
+                alert("Password must be atleast 6 char long");
+            }
+
+        }
+    </script>
+</body>
+</html>

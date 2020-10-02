@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form2" id="form2">
+        Name : <input type="text" name="username2" id="user"> <br><br>
+        Password: <input type="password" name="pass2"><br><br>
+        <input type="submit" value="Submit 2">
+    </form>
+    <script>
+        //Accessing fields by Id
+        var username=document.getElementById("user");
+        console.log(username);
+        console.log(username.name);
+        console.log(username.type);
+        console.log(username.id);
+
+        //Accessing field by elements[]
+
+        var x=document.form2.elements[0];
+        console.log(x);
+
+    </script>
+</body>
+</html>

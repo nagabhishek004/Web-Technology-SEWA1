@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" id="form1">
+        Name : <input type="text" name="username1"> <br><br>
+        Password: <input type="password" name="pass1"><br><br>
+        <input type="submit" value="Submit 1">
+    </form>
+    <hr>
+    <hr>
+    <form name="form2" id="form2">
+        Name : <input type="text" name="username2"> <br><br>
+        Password: <input type="password" name="pass2"><br><br>
+        <input type="submit" value="Submit 2">
+    </form>
+    <script>
+        //Accessing forms using JS
+        // using index
+        var x=document.forms[0];
+        console.log(x);
+
+        //using name Attribute value
+        var y=document.forms['form2'];
+        console.log(y);
+
+        //directly using name attribute value
+        var z=document.form1;
+        console.log(z);
+
+        //Accessing using ID Attribute
+        var f1=document.getElementById("form1");
+        var f2=document.getElementById("form2");
+        console.log(f1);
+        console.log(f2);
+    </script>
+
+</body>
+</html>

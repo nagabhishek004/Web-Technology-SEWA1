@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Number Validation</h1>
+    <p>Enter number between 1 to 20</p>
+    <input id="num">
+    <input type="submit" value="submit" onclick="validate()">
+    <h2 id="demo"></h2>
+    <script>
+        function validate(){
+            var text;
+            var x=document.getElementById("num").value;
+            if(isNaN(x)||x<1||x>20){
+               // alert("Enter number with in range");
+               text="Input not Valid";
+
+            }
+            else{
+               // alert("number valid");
+               text="Input Valid";
+            }
+            var ele=document.getElementById("demo");
+            ele.innerHTML=text;
+        }
+    </script>
+</body>
+</html>
