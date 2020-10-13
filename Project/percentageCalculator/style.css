@@ -1,0 +1,32 @@
+#form{
+    border: 10px double black;
+    width: 40%;
+    padding: 40px;
+    transform: translate(407px);
+    
+}
+label{
+    font-size: 45px;
+}
+input[type='number']{
+    width: 210px;
+    height: 26px;
+    float: right;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    background-color: yellow;
+}
+button{
+    width: 300px;
+    height: 40px;
+    transform: translate(140px);
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+   
+    
+}
