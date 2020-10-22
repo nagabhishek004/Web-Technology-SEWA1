@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  autocomplete="on" method="get" novalidate>
+        <fieldset>
+            <legend>Registration Details</legend>
+       <label for="fname">First name :</label>
+       <input type="text" id="fname" name="fname" required autofocus> <sup>*</sup><br><br>
+       <label for="lname">Last Name :</label>
+       <input type="text" id="lname" name="lname" required><br><br>
+       <label for="email">Email :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <input type="email" id="email" name="email"><br><br>
+       <label for="pass">Password :</label>
+       <input type="password" id="pass" name="pwd"><br><br>
+       <label for="gender">Gender</label>
+       <input type="radio" id="gender" name="gender" checked>Male
+       <input type="radio" id="gender" name="gender">Female
+       <input type="radio" id="gender" name="gender">Others <br><br>
+       <label for="yop">Y.O.P :   </label>
+       <input type="number" id="yop" name="yop" min="2011" max="2020"><br><br>
+       <label for="Education">Education :</label>
+       <select name="edu" id="Education">
+        
+           <option value="B.E" selected>B.E</option>
+           <option value="B.Tech">B.Tech</option>
+           <option value="M.E">M.E</option>
+           <option value="M.Tech">M.Tech</option>
+       </select><br><br>
+       <label for="inst">Institute </label>
+       <input list="ins" id="inst">
+       <datalist id="ins">
+           <option value="Qsp">Q-Spiders</option>
+           <option value="Jsp">J-Spiders</option>
+           <option value="Psp">Py-Spiders</option>
+           <option value="Asp">Ai-Spiders</option>
+
+
+       </datalist><br><br>
+       <label for="sub">Subject</label><br><br>
+       <input type="checkbox" name="sub" id="sub" checked>Java <br>
+       <input type="checkbox" name="sub" id="sub">J2EE <br>
+       <input type="checkbox" name="sub" id="sub">Spring <br>
+       <input type="checkbox" name="sub" id="sub">Hibernate <br>
+       <input type="checkbox" name="sub" id="sub">Selenium <br>
+       <input type="checkbox" name="sub" id="sub">Angular <br>
+       <input type="checkbox" name="sub" id="sub">React <br>
+       <input type="checkbox" name="sub" id="sub">Web Technology <br>
+       <input type="checkbox" name="sub" id="sub">SQL <br><br>
+       <label for="comment">Comment</label><br><br>
+       <textarea name="txt" id="comment" cols="40" rows="5"></textarea><br><br>
+       <label for="date">Date :</label>
+       <input type="datetime-local"><br><br>
+       <label for="url">URL :</label>
+       <input type="url" id="url"><br><br>
+       <label for="search">Search :</label>
+       <input type="search"><br><br>
+       <label for="file">Upload File</label>
+       <input type="file" name="file" id="file" multiple>
+       <label for="pin">Pin</label>
+       <input type="text" name="pin" id="pin" maxlength="4">
+       <label for="readonly">Pass</label>
+       <input type="number" id="readonly" value="2020" readonly><br><br>
+       <label for="quantity"> Quantity</label>
+       <input type="number" min="10" max="200" step="10">
+       
+       <br><br>
+
+       <input type="submit">
+       <input type="reset" value="Cancel">
+ 
+
+    </fieldset>
+    </form>
+    <!------
+        placeholder
+        value
+        
+        
+        ------->
+</body>
+</html>
