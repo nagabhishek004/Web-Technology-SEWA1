@@ -1,0 +1,1252 @@
+1. What is stored in the object obj in following lines of Java code?
+box obj;
+A. Memory address of allocated memory of object
+B.NULL
+C. Any arbitrary pointer
+D. Garbage
+
+2. What will be the output of the following Java program?
+ class Box
+ {
+ int width;
+ int height;
+ int length;
+ }
+ class Mainclass
+ {
+ public static void main(String args[])
+ {
+ Box obj = new Box();
+ obj.width = 10;
+ obj.height = 2;
+ obj.length = 10;
+ int y = obj.width * obj.height * obj.length;
+ System.out.print(y);
+ }
+ }
+A. 12
+B. 200
+C. 400
+D. 100
+
+3. What is the extension of compiled java classes?
+A. .class
+B. .java
+C. .txt
+D. .js
+
+4. What will be the output of the following Java program?
+class box
+{
+ int width;
+ int height;
+ int length;
+ }
+ class mainclass
+ {
+ public static void main(String args[])
+ {
+ box obj = new box();
+ System.out.println(obj);
+ }
+ }
+A. 0
+B. 1
+C. Runtime error
+D. classname@hashcode in hexadecimal form
+
+5.Predict the output of program ?
+Public class Demo {
+Public static void main(String[] args)
+ {
+ int b = 2147483648;
+ System.out.println(b);
+ }
+}
+A. No output
+B. 2147483648
+C. 2147483647
+D. compile-time error
+
+6.Predict the output of program ?
+public class Demo {
+ public static void main(String args[])
+ {
+ System.out.print('A' + 'C'); 
+ }
+}
+A. AC
+B. 195
+C. 132
+D. Error
+
+7. Which of these is an incorrect array declaration?
+A. int arr[] = new int[5]
+B. int [] arr = new int[5]
+C. int arr[] = new int[5]
+D. int arr[] = int [5] new
+
+8. What will be the output of the following Java code?
+ class Demo
+ {
+ public static void main(String args[])
+ {
+ int  x[] = new int[10];
+ for (int i = 0; i < 10; i++)
+ {
+ x[i] = i;
+ System.out.print(x[i] + " ");
+ i++;
+ }
+ }
+ }
+A. 0 2 4 6 8
+B. 1 3 5 7 9
+C. 0 1 2 3 4 5 6 7 8 9
+D. 1 2 3 4 5 6 7 8 9 10
+Ans.A
+9. What will be the output of the following Java code?
+ class Demo
+ {
+ public static void main(String args[])
+ {
+ int arr[] = {0 , 1, 2, 3, 4, 5, 6, 7, 8, 9};
+ int n = 6;
+ n = arr[arr[n] / 2];
+ System.out.println(arr[n] / 2);
+ }
+ }
+A. 3
+B. 0
+C. 6
+D. 1
+
+10. What will be the output of this program?
+class Student31{
+int id1;
+String name1;
+void display(){
+System.out.println(id1+" "+name1);
+}
+public static void main(String args[]){
+Student31 s11=new Student31();
+s11.display();
+}
+}
+ A. 0 NULL
+ B. Compile error
+ C. NO Output
+ D. Runtime error
+
+11. What will be the output of the following Java program?
+class A
+ {
+ int i;
+ void display()
+ {
+ System.out.println(i);
+ }
+ }
+ class B extends A
+ {
+ int j;
+ void display()
+ {
+ System.out.println(j);
+ }
+ }
+ class inheritance_demo
+ {
+ public static void main(String args[])
+ {
+ B obj = new B();
+ obj.i=1;
+ obj.j=2;
+ obj.display();
+ }
+ }
+A. 0
+B. 1
+C. 2
+D. Compilation Error
+
+12. All classes in Java are inherited from which class?
+A. java.lang.class
+B. java.class.inherited
+C.java.class.object
+D. java.lang.Object
+
+13. In order to restrict a variable of a class from inheriting to
+subclass, how variable should be declared?
+A. Protected
+B.Private
+C. Public
+D. Static
+
+14. What will be the output of the following Java code?
+class overload
+ {
+ int x;
+int y;
+ void add(int a)
+ {
+ x = a + 1;
+ }
+ void add(int a , int b)
+ {
+ x = a + 2;
+ }
+ }
+ class Overload_methods
+ {
+ public static void main(String args[])
+ {
+ overload obj = new overload();
+ int a = 0;
+ obj.add(6, 7);
+ System.out.println(obj.x);
+ }
+ }
+A. 6
+B. 7
+C.8
+D. 9
+
+14. Which of these can be overloaded?
+A. Methods
+B. Constructors
+C. All of the mentioned
+D. None of the mentioned
+
+15. what is the data type of any class you write.?
+A.primitive
+B.non primitive
+C.String
+D.none
+
+16. how many primitive data types does java contains.?
+A.8
+B.6
+C.9
+D.none
+
+17.how many methods does Object class contains.?
+A.12
+B.11
+C.13
+D.10
+
+18. What will be the output of this program?
+class Student{
+int id;
+String name;
+Public Student(int id,String name){
+id=id;
+name=name;
+}
+public static void main(String args[]){
+Student s1=new Student(4,”guldu”);
+Sysout.out.println(s1.id+” ”+s1.name);
+}
+}
+ A. 0 NULL
+ B. Compile error
+ C. NO Output
+ D. 4 guldu
+
+19. What is the process of defining more than one method in a
+class differentiated by method signature?
+A. Method overriding
+B. Method overloading
+C. Method doubling
+D. None of the mentioned.
+
+20. Which of these data type can be used for a method having a
+return statement in it?
+A. void
+B. int
+C. float
+D. both int and float
+
+21. What is the process of defining a method in a subclass having
+same name & type signature as a method in its superclass?
+A. Method overloading
+B. Method overriding
+C. Method hiding
+C. None of the mentioned
+
+22. Which of these keywords can be used to prevent Method
+overriding?
+A. private
+B. constant
+C. protected
+D. final
+
+23. Which of these is supported by method overriding in Java?
+A. Abstraction
+B. Encapsulation
+C. Polymorphism
+D. None of the mentioned
+
+24. String in Java is a?
+A. class
+B. object
+C.variable
+D. character array
+
+24. What will be the output of the following Java program?
+class string_class3
+ {
+ public static void main(String args[])
+ {
+ String obj0 = "hello";
+ String obj1 = "world";
+ String obj2 = obj0;
+ obj2 = " world";
+ System.out.println(obj0 + " " + obj2);
+ }
+ }
+A. hello hello
+B. world world
+C. hello world
+D. world hello
+
+25. What will be the output of the following Java program?
+class string_class4
+ {
+ public static void main(String args[])
+ {
+ String obj0 = "hello";
+ String obj1 = "world";
+ String obj2 = "hello";
+ System.out.println(obj0.equals(obj1) + " " + obj0.equals(obj2));
+ }
+ }
+A. false false
+B. true true
+C. true false
+D. false true
+
+26. Which of these class is used to create an object whose
+character sequence is mutable?
+A. String()
+B. StringBuffer()
+C. String() & StringBuffer()
+D. None of the mentioned
+
+27. Which of this method of class StringBuffer is used to
+concatenate the string representation to the end of invoking
+string?
+A. concat()
+B. append()
+C. join()
+D. concatenate()
+
+28.Predict the output of the program ?
+Class Student
+{
+String name=”virat”;
+Void display( ){
+String name=”MSD”;
+System.out.println(name);
+}
+public static void main(String[] args){
+Student s1=new Student( );
+s1.display();
+}
+A.MSD
+B.virat
+C.Compilation error
+D.None of above
+
+29.Predict the output of the program ?
+Class Student
+{
+String name;
+Void display( ){
+String name=”MSD”;
+System.out.println(name);
+}
+public static void main(String[] args){
+Student s1=new Student( );
+System.out.println(s1.name);
+}
+A.MSD
+B.Compilation error
+C.null
+D.None of above
+
+30.Predict the output of the program ?
+Class Student
+{
+String name=”MSD”;
+Void display( ){
+String name;
+System.out.println(name);
+}
+public static void main(String[] args){
+Student s1=new Student( );
+s1.display();
+}
+A.MSD
+B.Compilation error
+C.null
+D.None of above
+
+31.Predict the output of the program ?
+Class Student
+{
+final String name;
+Void display( ){
+String name=”MSD”
+System.out.println(name);
+}
+public static void main(String[] args){
+Student s1=new Student( );
+System.out.println(s1.name);
+}
+A.MSD
+B.Compilation error
+C.null
+D.None of above
+
+32. Predict the output.
+class Bike{
+String name;
+String brand;
+void ride(){
+Sysout.out.println(“R15 V3”)
+return 0;
+}
+public static void main(String[] args){
+Bike b=new Bike();
+b.ride();
+}
+A.Compilation error
+B.R15 V3
+C.Runtime error
+D.none of above
+
+33. Predict the output.
+class Bike{
+String name;
+String brand;
+void ride(){
+Sysout.out.println(“R15 V3”)
+return ;
+}
+public static void main(String[] args){
+Bike b=new Bike();
+b.ride();
+}
+A.Compilation error
+B.R15 V3
+C.Runtime error
+D.none of above
+
+34.Predict the output
+class Engineer {
+Void work(){
+Sysout.out.println(“Engineer works”)
+}
+}
+class SoftwareEngineer extends Engineer {
+Void work(){
+Sysout.out.println(“SoftwareEngineer works”)
+}
+}
+class ElectricalEngineer extends Engineer {
+void work(){
+Sysout.out.println(“ElectricalEngineer works”)
+}
+}
+class CivilEngineer extends Engineer {
+void work(){
+Sysout.out.println(“CivilEngineer works”)
+}
+}
+class Test{
+public static void main(String[] args){
+Engineer e=new SoftwareEngineer();
+e.work();
+}
+A. Engineer works
+B. SoftwareEngineer works
+C. ElectricalEngineer works
+D. CivilEngineer works
+
+35.Any Thing in java which takes multiple form is know as.?
+A.inheritance
+B.polymorphism
+C.Encapsulation
+D.Abstraction
+
+36.how many types of polymorphisms are present?
+A.2
+B.3
+C.4
+D.none of above
+
+37.Abstract method is a method with only?
+A.Declaration
+B.implementation/definition
+C. both A&B
+D.none of above
+
+38.Runtime polymorphism can be achieved using the concept?
+A.method overloading
+B.method overriding
+C.Both A&B
+D.none of above
+
+39.compiletime polymorphism can be achieved using concept?
+A.method overloading
+B.method overriding
+C.Both A&B
+D.none of above
+
+40.Static binding is also known as?
+A.runtime polymorphism
+B.compiletime polymorphism
+C. Both A&B
+D.none of above
+
+
+41. What will be the output of the following Java program?
+ interface Calculate12
+ {
+ void cal(int item);
+ }
+ class displayA implements Calculate12
+ {
+ int x;
+ public void cal(int item)
+ {
+ x = item * item;
+ }
+ }
+ class displayB implements Calculate12
+ {
+ int x;
+ public void cal(int item)
+ {
+ x = item / item;
+ }
+ }
+ class Interfaces
+ {
+ public static void main(String args[])
+ {
+ displayA arr1 = new displayA;
+ displayB arr2 = new displayB;
+ arr1.x = 0;
+ arr2.x = 0;
+ arr1.cal(2);
+ arr2.cal(2);
+ System.out.print(arr1.x + " " + arr2.x);
+ }
+ }
+A. 0 0
+B. 2 2
+C. 4 1
+D. 1 4
+
+42. Which of the following is the correct way of implementing an
+interface salary by class manager?
+A. class manager extends salary
+B. class manager implements salary
+C. class manager imports salary
+D. none of the mentioned
+
+43. What will be the output of the following Java program?
+ interface Calculate
+ {
+ void cal(int item);
+ }
+ class display implements Calculate
+ {
+ int x;
+ public void cal(int item)
+ {
+ x = item * item;
+ }
+ }
+ class Interfaces
+ {
+ public static void main(String args[])
+ {
+ display arr = new display;
+ arr.x = 0;
+ arr.cal(2);
+ System.out.print(arr.x);
+ }
+ }
+A. 0
+B. 2
+C. 4
+D. None of the mentioned
+
+44. What type of variable can be defined in an interface?
+A. public static
+B. private final
+C. public final
+D. static final
+
+45. What happens when a constructor is defined for an interface?
+A. Compilation failure
+B. Runtime Exception
+C. The interface compiles successfully
+D. The implementing class will throw exception
+
+46.What will be the output of the following Java program?
+ import java.util.*;
+ class Demo2
+ {
+ public static void main(String args[])
+ {
+ HashMap obj = new HashMap();
+ obj.put("A", new Integer(1));
+ obj.put("B", new Integer(2));
+ obj.put("C", new Integer(3));
+ System.out.println(obj.keySet());
+ }
+ }
+A. [A, B, C]
+B. {A, B, C}
+C.{1, 2, 3}
+D. [1, 2, 3]
+
+47. What will be the output of the following Java program?
+ import java.util.*;
+ class Test1
+ {
+ public static void main(String args[])
+ {
+ int array[] = new int [5];
+ for (int i = 5; i > 0; i--)
+ array[5 - i] = i;
+ Arrays.sort(array);
+ for (int i = 0; i < 5; ++i)
+ System.out.print(array[i]);
+ }
+ }
+A. 12345
+B. 54321
+C.1234
+D. 5432
+
+48.predict the output
+package demo;
+import java.util.*;
+public class Demo1 {
+public static void main(String[] args) {
+HashSet<String> al=new HashSet<String>();
+al.add(null);
+al.add(null);
+System.out.println(al);
+}
+}
+A. [null, null]
+B. [null]
+C.CompileTime Error
+D.RunTime Error
+
+49.predict the output
+package demo;
+import java.util.*;
+public class Demo1 {
+public static void main(String[] args) {
+Hashtable<Integer,String> al=new Hashtable<Integer,String>();
+al.put(null,"virat");
+al.put(null,"virat1");
+System.out.println(al);
+}
+}
+A. [null, null]
+B. [null]
+C.CompileTime Error
+D.RunTime Error
+
+50.predict the output
+package demo;
+import java.util.*;
+public class Demo1 {
+public static void main(String[] args) {
+TreeMap<Integer,String> al=new TreeMap<Integer,String>();
+al.put(1,"virat");
+al.put(1,"rohit");
+System.out.println(al);
+}
+}
+A. {1=virat, 1=rohit}
+B. {1=rohit}
+C.CompileTime Error
+D.RunTime Error
+
+51.predict the output
+package demo;
+import java.util.*;
+public class Demo1 {
+public static void main(String[] args) {
+TreeSet<Integer> al=new TreeSet<Integer>();
+al.put(1);
+al.put(1);
+System.out.println(al);
+}
+}
+A. {1,1}
+B. {1}
+C.CompileTime Error
+D.RunTime Error
+
+52.predict the output
+package demo;
+import java.util.*;
+public class Demo1 {
+public static void main(String[] args) {
+TreeMap<Integer,String> ll=new TreeMap<>();
+ll.add(1,"virat");
+ll.add(2,"rohit");
+ll.add(3,"raina");
+ll.add(4,"yuvi");
+System.out.println(ll);
+}
+}
+A. {1=virat, 2=rohit, 3=raina, 4=yuvi}
+B. {3=raina,2=rohit,1=virat,4=yuvi}
+C.CompileTime Error
+D.RunTime Error
+
+
+53.Which of the following is FALSE about finally block?
+A.For each try block, there can be only 1 finally block.
+B. finally block will not be executed if program exits by calling
+System.exit();
+C. If an exception is not handled in the catch statement, before
+terminating the program, JVM executes the finally block
+D. finally block contains important code segment and so the code
+inside finally block is executed with/without the presence of try
+block in java code.
+
+54.predict the output.?
+public class Test
+{
+ try
+ {
+ public Test()
+ {
+ System.out.println("spiders");
+ throw new Exception();
+ }
+ } 
+ catch(Exception e)
+ {
+ System.out.println("jsp");
+ }
+ public static void main(String[] args)
+ {
+ Test test = new Test();
+ }
+}
+A. spiders
+B. jsp
+C. Compilation error
+D. None of the above
+
+55.predict the output.?
+class Demo
+{
+ public static void main(String[] args)
+ {
+ try
+ {
+ System.out.println(1/0);
+ }
+ catch(ArithmeticException e)
+ {
+ System.out.println(e.getMessage());
+ }
+ }
+}
+Options:
+A. java.lang.ArithmeticExcetion
+B. / by zero
+C. java.lang.ArithmeticExcetion:/ by zero
+D. ArithmeticExcetion
+
+56.predict the output.?
+class Spiders
+{
+ public static void main(String[] args)
+ {
+ try
+ {
+ System.out.println(1/0);
+ }
+ catch(Exception e)
+ {
+ System.out.println("Hello spiders");
+ }
+ catch(ArithmeticException e)
+ {
+ System.out.println("Welcome");
+ }
+ }
+}
+A. Hello spiders
+B. No Output
+C. Compile-time error
+D. welcome
+
+57.predict the output.?
+class Test
+{
+ public static void main(String[] args)
+ {
+ try
+ {
+ System.out.println(1/0);
+ }
+ System.out.println("Hello jsp");
+ catch(ArithmeticException e)
+ {
+ System.out.println("Welcome");
+ }
+ }
+}
+Options:
+A. Hello jsp
+B. Hello jsp Welome
+C. Run-time Exception
+D. Compile-time error
+
+58. Which of these is a process of writing the state of an object to
+a byte stream?
+A. Serialization
+B. Externalization
+C. File Filtering
+D. All of the mentioned
+
+59. What is deserialization?
+A. Turning object in memory into stream of bytes
+B. Turning stream of bytes into an object in memory
+C. Turning object in memory into stream of bits
+D. Turning stream of bits into an object in memory
+
+60. What type of members are not serialized?
+A. Private
+B. Protected
+C. Static
+D. Throwable
+
+
+
+
+
+
+
+
+
+
+
+1. What is the extension of byte code files?
+A. .java
+B. .class
+C. .xml
+D. .byte
+
+2. What is it called where child object gets killed if parent object is
+killed?
+A. Aggregation
+B. Composition
+C. Encapsulation
+D. Association
+
+3. What is true about constructor?
+A. It can contain return type
+B. It can take any number of parameters
+C. It can have any non access modifiers
+D. Constructor cannot throw an exception
+
+4. What would be behaviour if the constructor has a return type?
+A. Compilation error
+B. Runtime error
+C. Compilation and runs successfully
+D. Only String return type is allowed
+
+5. Which component is used to compile, debug and execute java
+program?
+A. JVM
+B. JDK
+C. JIT
+D. JRE
+
+6. Which component is responsible for converting bytecode into
+machine specific code?
+A. JVM
+B. JDK
+C. JIT
+D. JRE
+
+7. What is the extension of java code files?
+A. .class
+B. .java
+C. .txt
+D. .js
+
+8. Which of these operators is used to allocate memory for an object?
+A. malloc
+B. alloc
+C. new
+D. give
+
+9. What will be the output of the following Java program?
+class box
+ {
+ int width;
+ int height;
+ int length;
+ }
+ class mainclass
+ {
+ public static void main(String args[])
+ {
+ box obj1 = new box();
+ box obj2 = new box();
+ obj1.height = 4;
+ obj1.length = 5;
+ obj1.width = 4;
+ obj2 = obj1;
+ System.out.println(obj2.height);
+ }
+ }
+A. 4
+B. 5
+C. Runtime error
+D. Garbage value
+
+10. What will be the output of the following Java program?
+class box
+ {
+ int width;
+ int height;
+ int length;
+ }
+ class mainclass
+ {
+ public static void main(String args[])
+ {
+ box obj = new box();
+ System.out.println(width);
+ }
+ }
+A. 0
+B. 1
+C. Runtime error
+D. compile time error
+
+11. Which of these keywords can be used to prevent Method overriding?
+A. static
+B. private
+C. protected
+D. final
+
+12. What will be the output of the following Java program?
+class A
+ {
+ int i;
+ public void display()
+ {
+ System.out.println(i);
+ } 
+ }
+ class B extends A
+ {
+ int j;
+ public void display()
+ {
+ System.out.println(j);
+ }
+ }
+ class Dynamic_dispatch
+ {
+ public static void main(String args[])
+ {
+ B obj2 = new B();
+ obj2.i = 1;
+ obj2.j = 2;
+ A r;
+ r = obj2;
+ r.display();
+ }
+ }
+A. 1
+B. 2
+C. 3
+D. 4
+
+13. What is the return type of a method that does not return any value?
+A. int
+B. float
+C. void
+D. double
+
+14. What will be the output of the following Java program?
+class Box
+ {
+ int width;
+ int height;
+ int length;
+ int volume;
+ void volume(int height, int length, int width)
+ {
+ volume = width*height*length;
+ }
+ }
+ class Prameterized_method
+ {
+ public static void main(String args[])
+ {
+ box obj = new box();
+ obj.height = 1;
+ obj.length = 5;
+ obj.width = 5;
+ obj.volume(3,2,1);
+ System.out.println(obj.volume);
+ }
+ }
+A. 0
+B. 1
+C. 6
+D. 25
+
+15. What will be the output of the following Java program?
+class Output
+ {
+public static void main(String args[])
+ {
+ int x , y = 1;
+ x = 10;
+ if(x != 10 && x / 0 == 0)
+ System.out.println(y);
+ else
+ System.out.println(++y);
+ }
+ }
+A. 1
+B. 2
+C. Runtime Error
+D. Compilation Error
+
+16. Predict the output of following Java program?
+class Test {
+ int i;
+}
+class Main {
+ public static void main(String args[]) {
+ Test t;
+ System.out.println(t.i);
+}
+A. 0
+B. garbage value
+C. compiler error
+D. runtime error
+
+17. Which of this keyword must be used to inherit a class?
+A. super
+B. this
+C. extent
+D. extends
+
+18.predict the output.?
+public class Demo {
+Demo(int i){
+this(1,"s");
+System.out.println("1");
+}
+Demo(String s){
+System.out.println("2");
+}
+Demo(String s,int i){
+this("beast");
+System.out.println("4");
+}
+Demo(int i,String s){
+this("s",1);
+System.out.println("3");
+}
+public static void main(String[] args) {
+Demo d=new Demo(5);
+}
+}
+A.2 4 3 1
+B.2 3 4 1
+C.4 2 3 1
+D.1 2 3 4
+
+19. All classes in Java are inherited from which class?
+A. java.lang.class
+B. java.class.inherited
+C. java.class.object
+D. java.lang.Object
+
+
+21. What will be the output of the following Java code?
+class test
+ {
+ int a;
+ int b;
+ void meth(int i , int j)
+ {
+ i *= 2;
+ j /= 2;
+ }
+ }
+ class Output
+ {
+ public static void main(String args[])
+ {
+ test obj = new test();
+ int a = 10;
+ int b = 20;
+ obj.meth(a , b);
+ System.out.println(a + " " + b);
+ }
+ }
+A. 10 20
+B. 20 10
+C. 20 40
+D. 40 20
+
+22. What will be the output of the following Java code?
+class overload
+ {
+ int x;
+int y;
+ void add(int a)
+ {
+ x = a + 1;
+ }
+ void add(int a , int b)
+ {
+ x = a + 2;
+ }
+ }
+ class Overload_methods
+ {
+ public static void main(String args[])
+ {
+ overload obj = new overload();
+ int a = 0;
+ obj.add(6, 7);
+ System.out.println(obj.x);
+ }
+ }
+A. 6
+B. 7
+C. 8
+D. 9
+
+23.JVM can understand which type of file.?
+A. .class
+B. .java
+C. both a & c
+D. none of the above
+
+24.what are the components of a platform.?
+A.OS+ram
+B.OS+processor
+C.OS+processor+rom
+D.none of the above
+
+25.predict the output?
+class Demo7 {
+public static void main(String[] args)
+ {
+ String str[] = { "12345", "619", "12345" };
+ System.out.println(str.length);
+ System.out.println(str[0].length);
+ }
+}
+A.Error
+B.5
+C.13
+D.None
+
+26.predict the output?
+class Test1 {
+public
+ static void main(String[] args)
+ { 
+ int arr[] = { 11, 22, 33 };
+ System.out.print(arr[-2]);
+ }
+}
+Option
+A. 11 33
+B. Error
+C. exception
+D. 11 -33
+
+27.predict the output?
+class Test1 {
+public
+ static void main(String[] args)
+ {
+ int arr[] = new int[5];
+ int arr2[] = new int[5];
+ System.out.print(arr.length + " ");
+ System.out.print(arr2.length());
+ }
+} 
+A. 5 5
+B. Error
+C. Exception
+D. None
+
+28. Evaluate the following Java expression, if x=3, y=5, and z=10:
+++z + y - y + z + x++
+A.24
+B.23
+C.20
+D.25
+
+29. Which of the following can be operands of arithmetic operators?
+A. Numeric
+B. Boolean
+C. Characters
+D. Both Numeric & Characters
+
+30. What will be the output of the following Java program?
+ class Demo
+ {
+ public static void main(String args[])
+ {
+ double var1 = 1 + 5;
+ double var2 = var1 / 4;
+ int var3 = 1 + 5;
+ int var4 = var3 / 4;
+ System.out.print(var2 + " " + var4);
+ }
+ }
+A. 1 1
+B. 0 1
+C. 1.5 1
+D. 1.5 1.0
+
+
+32.Data type long literals are appended by _____
+A.Uppercase L
+B.Lowercase L
+C.Long
+D.Both A and B
+
+33.Which variables are created when an object is created with the use of
+the keyword 'new' and destroyed when the object is destroyed?
+A.Local variables
+B.Instance variables
+C.Class Variables
+D.Static variables
+
+
+
