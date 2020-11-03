@@ -1,0 +1,1012 @@
+
+
+34. What will be the output of the following Java program?
+class Area56
+ {
+ int width;
+ int length;
+ int volume;
+ Area56()
+ {
+ width=5;
+ length=6;
+ }
+ void volume()
+ {
+ volume = width*length*height;
+ }
+ }
+ class cons_method
+ {
+ public static void main(String args[])
+ {
+ Area56 obj = new Area56();
+ obj.volume();
+ System.out.println(obj.volume);
+ }
+ }
+A. 0
+B. 1
+C. 30
+D. error
+
+35. Which of these is the method which is executed first before
+execution of any other thing takes place in a program?
+A. main method
+B. finalize method
+C. static method
+D. private method
+
+36. What will be the output of the following Java program?
+ class Box12
+ {
+ int width;
+ int height;
+ int length;
+ int volume;
+ void volume()
+ {
+ volume = width * height * length;
+ }
+ void volume(int x)
+ {
+ volume = x;
+ }
+ }
+ class Output31
+ {
+ public static void main(String args[])
+ {
+ Box12 obj = new Box12();
+ obj.height = 1;
+ obj.length = 5;
+ obj.width = 5;
+ obj.volume(5);
+ System.out.println(obj.volume);
+ }
+ }
+A. 0
+B. 5
+C. 25
+D. 26
+
+37. What will be the output of the following Java code?
+ class Overload008
+ {
+ int x;
+double y;
+ void add(int a , int b)
+ {
+ x = a + b;
+ }
+ void add(double c , double d)
+ {
+ y = c + d;
+ }
+ overload()
+ {
+ this.x = 0;
+ this.y = 0;
+ }
+ }
+ class Overload_methods
+ {
+ public static void main(String args[])
+ {
+ Overload008 obj = new Overload008();
+ int a = 2;
+ double b = 3.2;
+ obj.add(a, a);
+ obj.add(b, b);
+ System.out.println(obj.x + " " + obj.y);
+ }
+ }
+A. 6 6
+B. 6.4 6.4
+C. 6.4 6
+D. 4 6.4
+
+38. What will be the output of the following Java code?
+ class Test45
+ {
+ int a;
+ int b;
+ void meth(int i , int j)
+ {
+ i *= 2;//i=i*2
+ j /= 2;//j=j/2
+ }
+ }
+ class Output
+ {
+ public static void main(String args[])
+ {
+ Test45 obj = new Test45();
+ int a = 10;
+ int b = 20;
+ obj.meth(a , b);
+ System.out.println(a + " " + b);
+ }
+ }
+A. 10 20
+B. 20 10
+C. 20 40
+D. 40 20
+
+39. What will be the output of the following Java code?
+ class Test12
+ {
+ int a;
+ int b;
+ Test12(int i, int j)
+ {
+ a = i;
+ b = j;
+ }
+ void meth(Test12 c)
+ {
+ c.a *= 2;//c.a=c.a*2;
+ c.b /= 2;//c.b=c.b/2;
+ }
+ }
+ class Output
+ {
+ public static void main(String args[])
+ {
+ Test12 obj = new Test12(10 , 20);
+ obj.meth(obj);
+ System.out.println(obj.a + " " + obj.b);
+ }
+ }
+A.10 20
+B. 20 10
+C.20 40
+D. 40 20
+
+
+
+
+46.predict the output.?
+class Base
+{
+ public static String s = " Super Class ";
+ public Base()
+ {
+ System.out.printf("2");
+ }
+}
+public class Derived extends Base
+{ 
+ public Derived()
+ {
+ 
+ }
+
+ public static void main(String[] args)
+ {
+ Derived obj = new Derived();
+ System.out.printf(s);
+ }
+}
+A. 2 Super Class
+B.Super Class 2
+C. Compilation error
+D.exception
+
+47. Which keyword is used by the method to refer to the object that
+invoked it?
+A. import
+B. catch
+C. abstract
+D. this
+
+48. Which function is used to perform some action when the object is to
+be destroyed?
+A. finalize()
+B. delete()
+C. main()
+D. none of the mentioned
+
+49.What is garbage collection in the context of Java?
+A.Java deletes all unused java files on the system.
+B.Memory used by the object with no reference is automatically
+reclaimed.
+C.The JVM cleans output of Java program with error.
+D.Any unused package in a program automatically gets deleted.
+
+
+
+52. What happens when we access the same variable defined in two
+interfaces implemented by the same class?
+A. Compilation failure
+B. Runtime Exception
+C. The JVM is not able to identify the correct variable
+D. The interfaceName.variableName needs to be defined
+
+53. Encapsulation helps in writing ___________ classes in java.
+A. Mutable
+B. Abstract
+C. Wrapper
+D. Immutable
+
+54. How can Encapsulation be achieved?
+A. Using Access Specifiers
+B. Using only private members
+C. Using inheritance
+D. Using Abstraction
+
+55.predict the output.?
+import java.util.LinkedList;
+
+class Demo12 {
+public void show()
+ {
+ LinkedList<String> list = new LinkedList<String>();
+ 
+ System.out.print(list.getFirst());
+ }
+} public class Main {
+public static void main(String[] args)
+ {
+ Demo12 demo = new Demo12();
+ demo.show();
+ }
+}
+A. null
+B. IndexOutOfBoundException
+C. NoSuchElementException
+D.compile time error
+
+56.predict the output.?
+import java.util.ArrayList;
+
+class Demo {
+public void show()
+ {
+ ArrayList<String> list = new ArrayList<String>();
+ list.add("jsp"); 
+ list.add("spiders");
+ System.out.print(list.getFirst());
+ }
+} public class Main {
+public static void main(String[] args)
+ {
+ Demo demo = new Demo();
+ demo.show();
+ }
+}
+A. jsp
+B. Compilation Error
+C. Runtime Error
+D.spiders
+
+57. what is the incremental capacity of LinkedList?
+A.currentcapacityx2
+B. (currentcapacity*3/2)+1
+C. no incremental capacity
+D. currentcapacityx2
+
+58. Which of these keywords must be used to monitor for exceptions?
+A. try
+B.finally
+C.throw
+D. catch
+
+59. What will be the output of the following Java program?
+ class Exception_handling
+ {
+ public static void main(String args[])
+ {
+ try
+ {
+ System.out.print("Hello" + " " + 1 / 0);
+ }
+ catch(ArithmeticException e)
+ {
+ System.out.print("World1");
+ }
+ }
+ }
+A. Hello
+B.World1
+C. HelloWorld
+D. Hello World
+
+60. What will be the output of the following Java program?
+ class Exception_handling
+ {
+ public static void main(String args[])
+ {
+ try
+ {
+ int a, b;
+ b = 0;
+ a = 15 / b;
+ System.out.print("A2");
+ }
+ catch(ArithmeticException e)
+ {
+ System.out.print("B2");
+ }
+ finally
+ {
+ System.out.print("C2");
+ }
+ }
+ }
+A. A2B2C2
+B. B2
+C. A2C2
+D. B2C2
+
+1. Which of these keywords is used to make a class?
+A. class
+B. struct
+C. int
+D. Class
+
+2. Which of the following is a valid declaration of an object of
+class Box?
+A. Box obj = new Box();
+B. Box obj = new Box;
+C. obj = new Box();
+D. new Box obj;
+
+3. What will be the output of the following Java program?
+ class Main_class1
+ {
+ public static void main(String args[])
+ {
+ int x = 9;
+ if (x == 9)
+ {
+ int x = 8;
+ System.out.println(x);
+ }
+ }
+ }
+A. 9
+B. 8
+C. Compilation error
+D. Runtime error
+
+4. Which of the following is not a Java features?
+A.Dynamic
+B.Architecture Neutral
+C.Use of pointers
+D.Object-oriented
+
+5.Which statement transfer execution to different parts of your
+code based on the value of an expression?
+A.If
+B.Switch
+C.Nested-if
+D.if-else-if
+
+6.output of program ?
+public class Demo {
+public static void main(String[] args)
+ {
+ for (;;)
+ System.out.println("spiders”);
+ }
+}
+Options:
+A.spiders
+B.Compile time error
+C.Run time Exception
+D.spiders (Infinitely)
+
+7.predict the output?
+class Demo {
+public static void main(String[] args)
+ {
+ for (int i = 0; ; i++) {
+ System.out.println("I");
+ }
+ System.out.println("J");
+ }
+}
+A. I
+B. I(infinitely)
+C.J
+D. Compile time error
+
+
+9. Which statement is true about java?
+A. Platform independent programming language
+B. Platform dependent programming language
+C. Code dependent programming language
+D. Sequence dependent programming language
+
+10. Which of the below is invalid identifier with the main
+method?
+A. public
+B. static
+C. private
+D. final
+
+11. What is the extension of compiled java classes?
+A. .class
+B. .java
+C. .txt
+D. .js
+
+12.Which of the following is false?
+A.The rt.jar stands for the runtime jar
+B.It is an optional jar file
+C.It contains all the compiled class files
+D.All the classes available in rt.jar is known to the JVM
+
+
+14.output of program ?
+public class Demo {
+ public static void main(String[] args)
+ {
+ char[] str = { 'h', 'n', 'c', 'l', 'u', d', 'e', 'h', 'e', 'l', 'h' };
+ System.out.println(str.toString());
+ }
+}
+A. hncludehelh
+B. Error
+C.[C@19e0bfd (Memory Address)
+D. NULL
+
+
+16.output of program
+class Test12 {
+public static void main(String[] args)
+ {
+ int a[] = new int[5]; // line 1
+ int[] a11 = new int[]; // line 2
+ }
+}
+A.Error
+B. Exception
+C. Run successfully
+D. None
+
+17.output of program
+class Test41 {
+public
+ static void main(String[] args)
+ {
+ double d1 = 123.456;
+ double d2 = 12_3.4_5_6;
+ double d3 = 12_3.4_56; 
+
+ System.out.println(d1);
+ System.out.println(d2);
+ System.out.println(d3);
+ }
+}
+A. Error
+B. 123.456 12_3.4_5_6 12_3.4_56
+C. 123.456 123.456 123.456
+D. None
+
+18.output of program
+class Test1 {
+public static void main(String[] args)
+ {
+ int String = 65;
+ int Runnable = 97;
+
+ System.out.print(String + " : " + Runnable);
+ }
+} 
+A. Error
+B. A : a
+C. 65 : 97
+D. None
+
+19.output of program?
+class Test {
+ protected int x, y;
+}
+
+class Main {
+ public static void main(String args[]) {
+ Test t = new Test();
+ System.out.println(t.x + " " + t.y);
+ }
+}
+A.0 0
+B.compilation error
+C.no output
+D.none of above
+
+20. What will be the Output of the below code:
+public class Demo {
+ public static void main(String[] args)
+ {
+ int $_ = 5;
+ }
+}
+A. No output
+B. Error
+C.5
+D.Exception
+
+
+22.Modulus operator (%) can be applied to which of these?
+A.Integers
+B.Floating - point numbers
+C.Both A and B
+D.None of These
+
+23 Evaluate the following Java expression, if x=3, y=5, and
+z=10:
+++z + y - y + z + x++
+A.24
+B.23
+C.20
+D.25
+
+
+
+26. What is false about constructor?
+A. Constructors cannot be synchronized in Java
+B. Java does not provide default copy constructor
+C. Constructor can be inherited
+D. “this” and “super” can be used in a constructor
+
+27. What is the return type of Constructors?
+A.int
+B.float
+C.void
+D.None of these
+
+28. What is the output of this program?
+class Box1 {
+int width1;
+int height1;
+int length1;
+int volume11;
+public Box1() {
+width1 = 5;
+height1 = 5;
+length1 = 6;
+}
+void volume() {
+volume11 = width1*height1*length1;
+}
+}
+class Output1 {
+public static void main(String args[])
+{
+Box1 obj1 = new Box1();
+obj.volume();
+System.out.println(obj1.volume11);
+}
+}
+A.100
+B.150
+C.200
+D.250
+
+29. What is the output of this program?
+public class Test
+{
+ int num = 100;
+ public void calc(int num)
+ { this.num = num * 10; }
+ public void printNum() {
+ System.out.println(num); } 
+
+ public static void main(String[] args)
+ {
+ Test obj = new Test();
+ obj.calc(2);
+ obj.printNum();
+ }
+}
+A. 20
+B. 100
+C. 1000
+D. 2
+
+30. What is the output of this program?
+class Demo{
+ public static void main(String args[]) {
+ System.out.println(fun());
+ }
+ static int fun() {
+ return 20;
+ } 
+}
+A.20
+B.compiler error
+C.nothing
+D.none of above
+
+31. Which of the given methods are of Object class?
+A.notify(), wait( long msecs ), and synchronized()
+B.wait( long msecs ), interrupt(), and notifyAll()
+C.notify(), notifyAll(), and wait()
+D.sleep( long msecs ), wait(), and notify()
+
+32. What is the return type of the hashCode() method in the
+Object class?
+A.Object
+B.int
+C.long
+D.void
+
+33. What is the process of defining two or more methods within
+same class that have same name but same parameters
+declaration?
+A. method overloading
+B. method overriding
+C. method hiding
+D. method duplication
+
+34. What will be the output of the following Java code?
+class Demo
+{
+public void m1 (int i,float f)
+{
+ System.out.println(" int float method");
+}
+public void m1(float f,int i);
+ {
+ System.out.println("float int method");
+ }
+ public static void main(String[]args)
+ {
+ Demo s=new Demo();
+ s.m1(20,20);
+ }
+}
+A. int float method
+B. float int method
+C. compile time error
+D. run time error
+
+35. What is the process of defining a method in terms of itself,
+that is a method that calls itself?
+A. Polymorphism
+B. Iteration
+C. Encapsulation
+D. Recursion
+
+36.output of program.?
+public class Main
+{
+ public static void jsp(String s) 
+ {
+ System.out.println("String");
+ }
+ public static void jsp(Object o)
+ {
+ System.out.println("Object");
+ }
+ public static void jsp(Integer i)
+ {
+ System.out.println("Integer");
+ }
+
+ public static void main(String args[])
+ {
+ jsp(null);
+ }
+}
+A.Exception
+B.compiler error
+C.nothing
+D.none of above
+
+37.Output of program
+class Demo
+{
+ public String type = "a ";
+ public Demo() {
+ System.out.print("alpha "); }
+}
+
+public class Test extends Demo
+{
+ public Test() { S
+ystem.out.print("beta "); }
+
+ void go()
+ {
+ type = "b ";
+ System.out.print(this.type + super.type);
+ }
+ 
+ public static void main(String[] args)
+ {
+ new Test().go();
+ }
+}
+Options :
+A. alpha beta b b
+B. alpha beta a b
+C. beta alpha b b
+D. beta alpha a b
+
+38.predict the output.
+class First1
+{
+ int i1 = 10;
+
+ public First1(int j)
+ {
+ System.out.println(i1);
+ this.i1 = j * 10;
+ } 
+}
+
+class Second extends First1
+{
+ public Second(int j)
+ {
+ super(j);
+ System.out.println(i1);
+ this.i1 = j * 20;
+ }
+}
+
+public class MainClass
+{
+ public static void main(String[] args)
+ {
+ Second n = new Second(20);
+ System.out.println(n.i1);
+ }
+} 
+A.10 200 400
+B.compiler error
+C.nothing
+D.none of above
+
+
+39. Which of the following is used for implementing inheritance
+through interface to interface?
+A. inherited
+B.using
+C. extends
+D. implements
+
+40. If super class and subclass have same variable name, which
+keyword should be used to use super class?
+A. super
+B. this
+C. upper
+D. classname
+
+41. What will be the output of the following Java program?
+ class A32
+ {
+ int i;
+ public void display()
+ {
+ System.out.println(i);
+ }
+ }
+ class B extends A32
+ {
+ int j;
+ public void display()
+ {
+ System.out.println(j);
+ }
+ }
+ class Dynamic_dispatch12
+ {
+ public static void main(String args[])
+ {
+ B obj2 = new B();
+ obj2.i = 1;
+ obj2.j = 2;
+ A32 r;
+ r = obj2;
+ r.display();
+ }
+ }
+A. 1
+B. 2
+C. 3
+D. 4
+
+
+43. Which of these is correct way of calling a constructor having
+no parameters, of superclass A by subclass B?
+A. super(void);
+B. superclass.();
+C. super.A();
+D. super();
+
+44. Which of these keywords can be used to prevent Method
+overriding?
+A. private
+B. constant
+C. protected
+D. final
+
+45.Predict the output
+class Engineer {
+Void work(){
+Sysout.out.println(“Engineer works”)
+}
+}
+class SoftwareEngineer extends Engineer {
+Void work(){
+Sysout.out.println(“SoftwareEngineer works”)
+}
+}
+class ElectricalEngineer extends Engineer {
+void work(){
+Sysout.out.println(“ElectricalEngineer works”)
+}
+}
+class CivilEngineer extends Engineer {
+void work(){
+Sysout.out.println(“CivilEngineer works”)
+}
+}
+class Test{
+public static void main(String[] args){
+Engineer e=new CivilEngineer();
+e.work();
+}
+A. Engineer works
+B. SoftwareEngineer works
+C. ElectricalEngineer works
+D. CivilEngineer works
+
+46.compiletime polymorphism can be achieved using concept?
+A.method overloading
+B.method overriding
+C.Both A&B
+D.none of above
+Ans.A
+47.Static binding is also known as?
+A.runtime polymorphism
+B.compiletime polymorphism
+C. Both A&B
+D.none of above
+48. Which keyword is used by the method to refer to the object
+that invoked it?
+A. import
+B. catch
+C. abstract
+D. this
+Ans.D
+
+50. Which among the following violates the principle of
+encapsulation almost always?
+A. Local variables
+B. Global variables
+C. Public variables
+D. Array variables
+
+
+52. What does an interface contain?
+A. Method definition
+B. Method declaration
+C. Method declaration and definition
+D. Method name
+
+53. What type of methods an interface contain by default?
+A. abstract
+B. static
+C. final
+D. private
+Ans.A
+
+55. What will be the output of the following Java program?
+ class String_demo3
+ {
+ public static void main(String args[])
+ {
+ char chars[] = {'a', 'b', 'c'};
+ String s0 = new String(chars);
+ String s1 = "abcd";
+ int len1 = s1.length();
+ int len2 = s0.length();
+ System.out.println(len1 + " " + len2);
+ }
+ }
+A. 3 0
+B. 0 3
+C. 3 4
+D. 4 3
+Ans.D
+56. What is the relation between hashset and hashmap?
+A. HashSet internally implements HashMap
+B. HashMap internally implements HashSet
+C. HashMap is the interface; HashSet is the concrete class
+D. HashSet is the interface; HashMap is the concrete class
+
+57. Which of these return type of hasNext() method of an
+iterator?
+A. Integer
+B. Double
+C.Boolean
+D. Collections Object
+
+58. What will be the output of the following Java program?
+ import java.util.*;
+ class Test7
+ {
+ public static void main(String args[])
+ {
+ ArrayList obj1 = new ArrayList();
+ ArrayList obj2 = new ArrayList();
+ obj1.add("A");
+ obj1.add("B");
+ obj2.add("A");
+ obj2.add(1, "B");
+ System.out.println(obj1.equals(obj2));
+ }
+ }
+A. 0
+B. 1
+C. true
+D. false
+
+59.predict the output
+class Demo
+{
+ public static void main(String[] args)
+ {
+ try
+ {
+ System.out.println(1/0);
+ }
+ }
+}
+Options:
+A. Run-time Exception
+B. Compile-time error
+C. No Output
+D. Compile-time Exception
+
+60. What will be the output of the following Java program?
+ class Exception_handling
+ {
+ public static void main(String args[])
+ {
+ try
+ {
+ System.out.print("Hello" + " " + 1 / 0);
+ }
+ catch(ArithmeticException e)
+ {
+ System.out.print("World1");
+ }
+ }
+ }
+A. Hello
+B.World1
+C. HelloWorld
+D. Hello World
+
+60. Which of the following keyword is used by calling function
+to handle exception thrown by called function?
+A. throws
+B. throw
+C.try
+D. catch
+
+61. Which of these is a process of writing the state of an object
+to a byte stream?
+A. Serialization
+B. Externalization
+C. File Filtering
+D. All of the mentioned
+Ans.A
+62. What is deserialization?
+A. Turning object in memory into stream of bytes
+B. Turning stream of bytes into an object in memory
+C. Turning object in memory into stream of bits
+D. Turning stream of bits into an object in memory
+Ans.D
+63. What type of members are not serialized?
+A. Private
+B. Protected
+C. Static
+D. Throwable
+Ans.C
