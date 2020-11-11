@@ -80,3 +80,30 @@ ul li a:hover{
     transition: 0.5s;
  
 }
+.drop1 a,.drop2 a{
+    display: block;
+    margin-bottom: 5px;
+  
+}
+.drop1{
+    display: none;
+    width: 134px;
+   padding-top: 12px;
+    position: absolute;
+    top: 65px;
+   
+}
+.drop2{
+    display: none;
+    width: 122px;
+   padding-top: 12px;
+    position: absolute;
+    top: 65px;
+  
+}
+ul li:hover .drop1{
+    display: block;
+}
+ul li:hover .drop2{
+    display: block;
+}
