@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Fat Arrow Function
+        
+        var x=()=>{document.write("This is Fat Arrow Function"+"</br>");}
+        x();
+
+        //Fat Arrow Function with parameters
+        var details=(name,place)=>{document.write(name+" "+place+"</br>");}
+        details("abhishek","Bangalore");
+
+        //when u have only one parameter
+        var display=name=>{document.write(name+"</br>");}
+        display("Shivam","Patna");
+
+         //when u have only one parameter & one function Statement
+         var show=course=>document.write(course+"</br>");
+       show("Web-Technology");
+
+       //Fat-Arrow Function with return Statement
+       /*var disp=(branch)=>{return branch};
+       document.write(disp("BTM"));*/
+           var disp=(branch)=>branch; 
+              document.write(disp("BTM"));
+    </script>
+</body>
+</html>

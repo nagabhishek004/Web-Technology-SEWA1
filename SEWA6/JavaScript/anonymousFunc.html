@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Anonymous Function --> Zero param
+        var x=function(){
+            document.write("this is Anonymous Function"+"</br>");
+        }
+        x();
+        //Anonymous Function --> with param
+        var z=function(name,place){
+            document.write("</br>");
+            document.write(name+" "+place+"</br>");
+        }
+        z("abhishek","Bangalore");    
+      //Passing Anonymous Function as an Argument
+      function display(details){
+          return details();
+      }
+     document.write( display(function(){return "Java-Script"}));
+
+    </script>
+</body>
+</html>
+
