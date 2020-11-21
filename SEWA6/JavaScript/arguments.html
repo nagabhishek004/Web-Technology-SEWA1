@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function display(name,place){
+            arguments[0]="Shivam";
+            arguments[1]="patna";
+            document.write(name+"</br>");
+            document.write(place+"</br>");
+            document.write(arguments.length+"</br>");
+            document.write("-----------------------"+"</br>");
+            for(var i=0;i<=arguments.length-1;i++){
+                document.write(arguments[i]+"</br>");
+            }
+        }
+        display("Abhishek","Bangalore","BTM",9887654332);
+    </script>
+</body>
+</html>

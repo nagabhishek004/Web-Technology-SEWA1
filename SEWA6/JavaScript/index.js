@@ -1,0 +1,1 @@
+document.write("this is external Js"+"</br>");
