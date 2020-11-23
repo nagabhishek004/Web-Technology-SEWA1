@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //var Obj_Name={ };
+        var Employee={ };
+        Employee["name"]="Varun";
+        Employee["company"]="QSP";
+        Employee["place"]="Bangalore";
+        Employee["age"]=30;
+        Employee["work"]=function(){
+            document.write(Employee["name"]+" "+"has to work for 9 hours a day"+"</br>");
+        }
+        Employee["data"]=function(){
+            document.write("Name :"+Employee["name"]+"</br>");
+        document.write("company :"+Employee["company"]+"</br>");
+        document.write("place :"+Employee["place"]+"</br>");
+        document.write("age :"+Employee["age"]+"</br>");
+        }
+        
+        Employee["data"]();
+        Employee["work"]();
+    </script>
+</body>
+</html>

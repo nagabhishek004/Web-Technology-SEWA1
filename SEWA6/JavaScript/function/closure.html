@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Closure--->innerFunction  will b having access to outer-function variables
+        //Global Scope
+        var z=100;
+        function outerFunction()
+        {
+            //Outer Scope
+            var x="abhishek";
+            document.write("Outer-Function"+"</br>");
+            document.write(x+"</br>");
+            function innerFunction()
+                {
+                    //Local Scope
+                    var y=100;
+                    document.write("Inner-Function"+"</br>");
+                    document.write(x+" "+y+"</br>");
+
+                }
+            innerFunction();
+        }
+
+        outerFunction();
+    </script>
+</body>
+</html>
