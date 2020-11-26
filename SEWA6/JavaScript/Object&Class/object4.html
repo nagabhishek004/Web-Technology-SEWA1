@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Employee=new Object();
+        Employee.name="Uday";
+        Employee.place="Mysore";
+        Employee.company="QSP";
+        Employee.job="Java-Trainer";
+
+        Employee.work=function(){
+            document.write(Employee.name+" "+"has to work Minimum 9 hours a day"+"</br>");
+        }
+
+        Employee.details=function(){
+            document.write("Name :"+Employee.name+"</br>");
+            document.write("Place :"+Employee.place+"</br>");
+            document.write("Company :"+Employee.company+"</br>");
+            document.write("Job :"+Employee.job+"</br>");
+        }
+
+        Employee.details();
+        Employee.work();
+    </script>
+</body>
+</html>

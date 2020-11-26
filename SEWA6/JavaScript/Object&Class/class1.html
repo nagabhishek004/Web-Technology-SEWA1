@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Bike=function(brand,name,color,price){
+            this.name=name;
+            this.brand=brand;
+            this.price=price;
+            this.color=color;
+            this.details=function(){
+            document.write("Name :"+this.name+"</br>");
+            document.write("brand :"+this.brand+"</br>");
+            document.write("price :"+this.price+"</br>");
+            document.write("color :"+this.color+"</br>");
+            document.write("</br>");
+        }
+
+        }
+        var b1=new Bike("Yamaha","R15","Blue",190000);
+        b1.details();
+       // document.write(b1.brand+" "+b1.name+" "+b1.color+" "+b1.price+"</br>");
+        var b2=new Bike("Ktm","Duke","Orange",215000);
+        b2.details();
+       // document.write(b2.brand+" "+b2.name+" "+b2.color+" "+b2.price+"</br>");
+    </script>
+</body>
+</html>

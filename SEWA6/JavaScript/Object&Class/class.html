@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Bike=function(){
+            this.name="duke";
+            this.brand="Ktm";
+            this.price=215000;
+            this.color="orange";
+          this.display=function(){
+                document.write("Name :"+this.name+"</br>");
+                document.write("Brand :"+this.brand+"</br>");
+                document.write("Price :"+this.price+"</br>");
+                document.write("Color :"+this.color+"</br>");
+                document.write("</br>");
+            }
+        }
+        var b1=new Bike();
+        b1.display();
+        var b2=new Bike();
+        b2.display();
+    </script>
+</body>
+</html>
