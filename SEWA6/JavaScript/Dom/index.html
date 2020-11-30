@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My title</title>
+</head>
+<body>
+    <h1 id="head">My Header</h1>
+   <button onclick="changeColor1()">Red</button>
+   <button onclick="changeColor2()">Blue</button>
+   <button onclick="changeColor3()">Default</button>
+    <script>
+        function changeColor1(){
+            var h1=document.getElementById("head");
+            h1.style.color="red";
+        }
+        function changeColor2(){
+            var h1=document.getElementById("head");
+            h1.style.color="blue";
+        }
+        function changeColor3(){
+            var h1=document.getElementById("head");
+            h1.style.color="black";
+            h1.style.fontSize="60px";
+        }
+    
+  
+    
+    </script>
+</body>
+</html>

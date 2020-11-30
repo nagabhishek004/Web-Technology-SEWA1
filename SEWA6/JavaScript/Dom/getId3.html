@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Web Technology</h1>
+    <button onclick="changeColor('red')">Red</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <button onclick="changeColor('black')">Black</button>
+    <script>
+    
+        function changeColor(clr){
+            var heading=document.getElementById("h1");
+            heading.style.color=clr;
+            console.log(heading.style.color);
+            
+        }
+      
+  
+    </script>
+</body>
+</html>
