@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head">Web Technology</h1>
+    <h1 class="head">Java-Script</h1>
+    <h1 class="head">Document Object Model</h1>
+    <button onclick="changeColor()">Multi-Color</button>
+    <button onclick="orange()">Orange</button>  
+    <button onclick="default1()">Default</button>
+    <script>
+        function changeColor(){
+            var heading=document.getElementsByClassName("head");
+            heading[0].style.color="red";
+            heading[1].style.color="blue";
+            heading[2].style.color="hotpink";
+            console.log(heading);
+
+        }
+        function orange(){
+            var heading=document.getElementsByClassName("head");
+           for(i=0;i<heading.length;i++){
+               heading[i].style.color="orange";
+           }
+        }
+        function default1(){
+            var heading=document.getElementsByClassName("head");
+           for(i=0;i<heading.length;i++){
+               heading[i].style.color="black";
+           }
+        }
+    </script>
+</body>
+</html>
