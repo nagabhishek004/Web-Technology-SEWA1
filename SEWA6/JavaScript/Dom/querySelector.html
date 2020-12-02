@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1">This is a Heading</h1>
+    <p>This is a Paragraph</p>
+    <div>
+        <h1 class="head">Heading 1 inside div</h1>
+        <p id="para">Paragraph inside div</p>
+        <h1 id="head2">Heading 2 inside div</h1>
+    </div>
+    <section>
+        <h1 class="head">Heading inside Section</h1>
+        <p>Paragraph inside Section</p>
+    </section>
+    <script>
+        //querySelector w.r.t Id
+        //Multiple values---->whichever comes first that will be selected
+        var ele1=document.querySelector("#para,#head2,#head1");
+       // console.log(ele1);
+        //querySelector w.r.t class
+        var ele2=document.querySelector(".head");
+       // console.log(ele2);
+        //querySelector w.r.t tag-name
+        var ele3=document.querySelector("p,h1");
+       // console.log(ele3)
+
+        //querySelectorAll
+        var ele4=document.querySelectorAll("#para,#head1,.head");
+        console.log(ele4);
+    </script>
+</body>
+</html>
