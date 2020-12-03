@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>This is heading 1 before Div</h3>
+    <h3>This is heading 2 before Div</h3>
+    <div id="div">
+        <h1>heading</h1><p>this is Para</p> <!-----Comment----->This is a Division
+    </div>
+    <p>This is Para 1 After Div</p>
+    <p>This is Para 2 After Div</p>
+    <script>
+        var div=document.getElementById("div");
+        console.log(div.previousSibling);
+        console.log(div.previousElementSibling);
+    </script>
+    
+</body>
+</html>
