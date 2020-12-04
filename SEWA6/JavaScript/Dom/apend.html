@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            height: 200px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+
+    </div>
+    
+    <script>
+        var h1=document.createElement("h1");
+        var txt=document.createTextNode("This is a Heading");
+        h1.appendChild(txt);
+        console.log(h1);
+
+        var p=document.createElement("p");
+        p.textContent="This is a Paragraph";
+        console.log(p);
+
+        var div=document.getElementById("div");
+        div.appendChild(h1);
+        div.appendChild(p);
+
+
+
+    </script>
+</body>
+</html>

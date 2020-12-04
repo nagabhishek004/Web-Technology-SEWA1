@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            height: 300px;
+            width: 70%;
+        }
+        section{
+            border: 7px double blue;
+            height: 300px;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <h1 id="h1">This is a Heading inside Div</h1>
+    </div>
+    <br>
+    <br>
+    <section id="sec">
+        <p id="para"> This is Paragraph inside Section</p>
+
+    </section>
+    <script>
+        var div=document.getElementById("div");
+        var h1=document.getElementById("h1");
+        var sec=document.getElementById("sec");
+        var p=document.getElementById("para");
+
+       sec.appendChild(h1);
+      div.appendChild(p);
+    </script>
+</body>
+</html>

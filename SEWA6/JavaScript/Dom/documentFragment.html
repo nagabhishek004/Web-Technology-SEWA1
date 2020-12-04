@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            width: 70%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+
+    </div>
+    <script>
+        var df=document.createDocumentFragment();
+        console.log(df);
+        var h1=document.createElement("h1");
+        h1.textContent="this is a Heading 1";
+        var h2=document.createElement("h2");
+        h2.textContent="this is a Heading 2";
+        df.appendChild(h1);
+        df.appendChild(h2);
+
+        var div=document.getElementById("div");
+        div.appendChild(df);
+    </script>
+</body>
+</html>
