@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--------OverWriting Event-Handler------------------------->
+    <h1 id="h1">Event binding with Java-Script</h1>
+    <button id="btn">Click Me!</button>
+    <script>
+        var button=document.getElementById("btn");
+         button.onclick=changeColor1;
+         button.onclick=changeColor2;
+         button.onclick=changeColor3;
+        
+        function changeColor1()
+        {
+            var h1=document.getElementById("h1");
+            h1.style.color="hotpink";
+            h1.style.backgroundColor="black";
+        }
+        function changeColor2()
+        {
+            var h1=document.getElementById("h1");
+            h1.style.color="red";
+            h1.style.backgroundColor="black";
+        }
+        function changeColor3()
+        {
+            var h1=document.getElementById("h1");
+            h1.style.color="blue";
+            h1.style.backgroundColor="black";
+        }
+    </script>
+</body>
+</html>

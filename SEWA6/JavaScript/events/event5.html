@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--------Event Object---------------->
+    <h1 id="h1">Event Object</h1>
+    <script>
+        var h1=document.getElementById("h1");
+        function display(e){
+            console.log(e);
+        }
+        h1.addEventListener("click",display);
+    </script>
+</body>
+</html>
